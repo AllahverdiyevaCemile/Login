@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+  <title>Password</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+  <div class="container">
+    <form action="/action_page.php">
+      <label for="usrname" id="u">Username</label><br>
+      <input type="text" id="usrname" name="usrname" required><br>
+
+      <label for="psw" id="p">Password</label><br>
+      <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,15}"
+        title="Ən az bir böyük ve balaca hərf olmaqla 5 və 15 arasə dəyər girin" required><br>
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
+<script src="js/main.js"></script>
+</body>
+
+</html>
